@@ -3,7 +3,7 @@
 
 
 # 👏Annict-Badge
-[Annict](https://annict.com/)のユーザーデータをShields Badgeにして表示します。   
+[Annict](https://annict.com/)のユーザーデータをShields.ioのバッジにして表示します。   
 
 ## 🔨使い方
 [詳しくはこちらの記事をご覧ください](https://qiita.com/PenguinCabinet/items/6cdb6db6a5f8083295e5)。
