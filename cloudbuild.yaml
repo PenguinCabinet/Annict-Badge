@@ -1,0 +1,17 @@
+steps:
+  - name: gcr.io/google.com/cloudsdktool/cloud-sdk
+    entrypoint: gcloud
+    args:
+      - functions
+      - deploy
+      - annict
+      - --gen2
+      - --project=vital-reef-492404-f7
+      - --region=asia-northeast1
+      - --runtime=python314
+      - --entry-point=Annict
+      - --trigger-http
+      - --allow-unauthenticated
+      - --set-secrets=annict-badge-key=annict-badge-key:latest
+      - --source=.
+      - --quiet

@@ -13,13 +13,8 @@ def Get_annict_user_data(user_id):
     url = 'https://api.annict.com/v1/users?access_token={0}&filter_usernames={1}'.format(annict_access_token,user_id)
     user_json_data = requests.get(url).text
 
-    print(url,user_json_data)
-    print(len(annict_access_token),annict_access_token is None)
-
     user_data=json.loads(user_json_data)
     return user_data
-
-Get_annict_user_data("PeunginCabinet")
 
 def Get_Badge_URL(text1,text2,color,style):
     return "https://img.shields.io/badge/{0}-{1}-{2}?style={3}".format(text1,text2,color,style)
